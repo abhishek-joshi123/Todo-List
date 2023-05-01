@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Todo List</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+ 
+<body>
+    <nav> 
+      <img src="icon.jpg" alt="">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="text">
+        <p class="hire">hire_me</p>
+      </div>
+    </nav> 
+  
+  <div class="container">
+    <div class="add">
+      <div class="btn">
+        <button id="newTask" class="btn1"><p class="x">+</p></button>
+      </div>
+      <p class="para">Add new task</p>
+    </div>
+    <div class="del">
+      <div class="btn">
+        <button id= "deleteAll" class="btn1"><p class="x">+</p></button>
+      </div>
+      <p class="para">Delete All</p>
+    </div>
+  </div> 
+
+  <div class="form">
+    <header id="head">
+      <h2>Add a new task</h2>
+      <button  id="cross">x</button>
+    </header>
+    <div class="task">
+      <h3>Title</h3>
+      <form>
+        <input id="tit" type="text" placeholder="Enter you Task Title">
+      </form>
+      <h3>Description</h3>
+      <form>
+        <textarea id="des" cols="30" rows="7" placeholder="Enter you Task Content"></textarea>
+    </div>
+    <div class="foot">
+      <button id="addtsk">Add Task</button>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

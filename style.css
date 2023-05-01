@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Josefin+Sans:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #57fb9b, #6fc7f2);
+}
+
+nav {
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: black;
+}
+
+img {
+  padding: 0px 30px;
+  height: inherit;
+}
+
+
+ul {
+  height: inherit;
+  color: white;
+  list-style-type: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+li {
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  cursor: pointer;
+}
+
+.text {
+  padding-top: 40px;
+  padding-left: 200px;
+  padding-right: 50px;
+  font-size: 40px;
+  color: black;
+  text-transform: uppercase;
+  text-shadow: 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+
+.hire {
+  padding-left: 5px;
+  letter-spacing: 3px;
+  border-left: 5px solid rgb(38, 223, 38);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.add{
+  margin: 100px;
+  margin-top: 80px;
+  background-color: rgb(238, 243, 242);
+  border-radius: 10px;
+  width: 50%;
+  height: 60%;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.del{
+  margin: 100px;
+  background-color: rgb(238, 243, 242);
+  border-radius: 10px;
+  width: 50%;
+  height: 60%;
+  display: grid;
+  grid-template-rows: 2fr 1fr; 
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn1{
+  padding: 30px;
+  border: 3px dashed #97b8f2;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #97b8f2;
+  cursor: pointer;
+}
+
+.x{
+  font-size: 50px;
+}
+
+.x:hover{
+    animation: spin 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.para{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 25px;
+  font-weight: bold;
+  color: #659eff;
+}
+
+.todo{
+  margin: 100px;
+  background-color: rgb(238, 243, 242);
+  border-radius: 10px;
+  width: 350px;
+  height: 300px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.crs{
+  height: 10%;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+
+.cr{
+  height: 100%;
+  width: 25%;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid rgb(233, 49, 49);
+  cursor: pointer;
+}
+
+
+.work{
+  height: 90%;
+  border-bottom: 1px solid #9f9999;
+}
+
+.date{
+  height: 10%;
+  padding: 10px;
+}
+
+.title{
+  padding: 10px;
+  height: 20%;
+}
+
+.paragraph{
+  height: 70%;
+  padding: 10px;
+}
+
+.form{
+  width: 40%;
+  height: 85%;
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 8vh);
+  transform: translate(-50%, -50%);
+  background-color: rgb(238, 243, 242);
+  display: none;
+}
+
+#head{
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid #a5a5a5;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+}
+
+h2{
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 32px;
+}
+
+#cross{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff0000;
+  border-radius: 3px;
+  border: 1px solid rgb(2, 35, 28);
+  cursor: pointer;
+}
+
+.task{
+  height: 80%;
+}
+
+h3{
+  padding: 20px;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 550;
+}
+
+#tit{
+  width: 90%;
+  height: 60px;
+  margin: 10px 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#des{
+  width: 90%; 
+  margin: 10px 20px;
+  padding: 10px 20px;
+  font-size: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.foot{
+  height: 10%;
+}
+
+#addtsk{
+  width: 80%;
+  height: 70%;
+  margin: 20px;
+  position: relative;
+  left: 30px;
+  bottom: 30px;
+  background-color: #59f69a;
+  border: 1px solid #1cec73;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 550;
+  color: white;
+  cursor: pointer;
+}
+
+
+
